@@ -98,3 +98,28 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 Built by [MEOK AI Labs](https://meok.ai) — trading name of CSOAI LTD, UK Companies House 16939677.
 Founder: Nicholas Templeman (`nicholas@meok.ai`).
 License: MIT.
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "meok-mcp-hardening-mcp": {
+      "command": "uvx",
+      "args": ["meok-mcp-hardening-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install meok-mcp-hardening-mcp` then run the `meok-mcp-hardening-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `audit_server_json` to …"
+- "Use `audit_tool_description` to …"
+- "Use `check_destructive_surface` to …"
